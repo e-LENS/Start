@@ -2,7 +2,7 @@
 
 # Software
 
-## Prerequisites
+## Requirements
 * LINUX
 * Python 3
 * CPU or NVIDIA GPU
@@ -67,7 +67,7 @@ python test.py --model posenet  --dataroot ./datasets/[데이터셋이름] --nam
 
 # Hardware
 
-## Prerequisites
+## Requirements
 * Jetson Nano 2GB Developer Kit
 * Jetracer
 * micro SD card (64GB~)
