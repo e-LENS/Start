@@ -103,6 +103,3 @@ sudo python3 setup.py install
 sudo reboot
 ```
 
-## Basic motions
-
-
