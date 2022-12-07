@@ -32,7 +32,7 @@ datasets/RedKitchen
 datasets/Stairs
 ```
 
-* 각 데이터셋에 대해 mean image 연산
+* Compute the mean image for each dataset
 
 ```
 python util/compute_image_mean.py --dataroot datasets/[데이터셋이름] --height 256 --width 455 --save_resized_imgs
