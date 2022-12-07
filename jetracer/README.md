@@ -14,7 +14,7 @@
 
 #### car.steering (방향 조절)
 
-<img src="https://user-images.githubusercontent.com/108324590/206144894-e8e1cc9f-8ab2-4fcf-b5b7-e2a1573af7ac.jpg" width="80%" height="80%">
+<img src="https://user-images.githubusercontent.com/108324590/206144894-e8e1cc9f-8ab2-4fcf-b5b7-e2a1573af7ac.jpg" width="60%" height="60%">
 
 * When running the statement car.steering = 0, the car steering will turn. 0 means forward, 1 means the wheel goes to the far left, -1 means the wheel goes to the far right. Change the wheel to different directions to different values, the value range is [-1,1]
 
@@ -27,7 +27,7 @@
 
 #### car.throttle (속도조절)
 
-<img src="https://user-images.githubusercontent.com/108324590/206145667-7c0420c9-75ce-4a92-9743-c0cdd474aec2.jpg" width="80%" height="80%">
+<img src="https://user-images.githubusercontent.com/108324590/206145667-7c0420c9-75ce-4a92-9743-c0cdd474aec2.jpg" width="60%" height="60%">
 
 * car.throttle is the throttle size, the range is [-1,1], 0 means stop, 1 means forward at maximum speed, -1 means backward at maximum speed, after modifying the secondary value and running the program, the rear wheel will turn.
 
