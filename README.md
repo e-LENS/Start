@@ -77,6 +77,7 @@ python test.py --model posenet  --dataroot ./datasets/[데이터셋이름] --nam
 4. Insert SD card to SD card slot of Jetson nano, Connect to the monitor and set up system configuration
 5. Download [JetRacer image](https://drive.google.com/file/d/1YtnjQ77w1B9REzy1JgLJbVSs2K3ocAEr/view?usp=sharing) and unzip it
 6. Use Etcher to write the Jetracer Image to the microSD card
+7. Again, insert SD card to SD card slot of Jetson nano
 
 * Use `sudo systemctl set-default graphical.target` command to enable GUI
 
@@ -86,6 +87,14 @@ python test.py --model posenet  --dataroot ./datasets/[데이터셋이름] --nam
 2. Jetson Nano의 piOLED에서 Wlan0 interface의 ip address 확인 or `ifconfig` command로 확인
 3. 이후 브라우저에서 `http://<ip address>:8888` 주소로 RetRacer에 무선 연결
 4. Password `jetbot` 을 입력해 Jupyter Lab 실행
+
+* JetRacer package 업데이트를 위해서 다음 command 실행
+```
+cd jetracer
+git checkout master
+sudo python3 setup.py install
+sudo reboot
+```
 
 ## Basic motions
 
