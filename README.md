@@ -53,12 +53,12 @@ To use pretrained googlenet trained on the Places dataset, download [places-goog
 
 ### Train a model
 ```
-python train.py --model posenet --dataroot ./datasets/[데이터셋이름] --name posenet/KingsCollege/beta500 --beta 500 --gpu 0
+python train.py --model posenet --dataroot ./datasets/[데이터셋이름] --name posenet/[데이터셋이름]/beta500 --beta 500 --gpu 0
 ```
 
 ### Test a model
 ```
-python test.py --model posenet  --dataroot ./datasets/[데이터셋이름] --name posenet/KingsCollege/beta500 --gpu 0
+python test.py --model posenet  --dataroot ./datasets/[데이터셋이름] --name posenet/[데이터셋이름]/beta500 --gpu 0
 ```
 
 * 학습된 PoseNet 모델 및 학습 결과는 `./checkpoints/posenet/[데이터셋이름]/beta500/`에 저장됨
