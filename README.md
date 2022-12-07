@@ -1,5 +1,3 @@
-# eLENS
-
 # Software
 
 ## Requirements
@@ -65,6 +63,7 @@ python test.py --model posenet  --dataroot ./datasets/[데이터셋이름] --nam
 * 학습된 모델의 테스트 결과는 `./results/posenet/[데이터셋이름]/beta500/`에 저장됨
 
 
+---
 # Hardware
 
 ## Requirements
