@@ -12,7 +12,7 @@
 
 ### [Basic_motion.ipynb]
 
-* This section mainly learns how to control the movement of the car. The car is divided into two parts to control, one part is steering steering to control the car turning, and the other part is the throttle to control the speed of the rear wheels.
+> This section mainly learns how to control the movement of the car. The car is divided into two parts to control, one part is steering steering to control the car turning, and the other part is the throttle to control the speed of the rear wheels.
 
 
 ### car.steering (방향 조절)
