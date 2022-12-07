@@ -74,8 +74,11 @@ python test.py --model posenet  --dataroot ./datasets/[데이터셋이름] --nam
 1. Format the micro SD card
 2. Download [jetson-nano-2gb-sd-card-image](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image) and unzip it
 3. Use Etcher to write the Jetson Nano Image to the microSD card
-4. Download [JetRacer image](https://drive.google.com/file/d/1YtnjQ77w1B9REzy1JgLJbVSs2K3ocAEr/view?usp=sharing) and unzip it
-5. Use Etcher to write the Jetracer Image to the microSD card
+4. Insert SD card to SD card slot of Jetson nano, Connect to the monitor and set up system configuration
+5. Download [JetRacer image](https://drive.google.com/file/d/1YtnjQ77w1B9REzy1JgLJbVSs2K3ocAEr/view?usp=sharing) and unzip it
+6. Use Etcher to write the Jetracer Image to the microSD card
+
+* Use `sudo systemctl set-default graphical.target` command to enable GUI
 
 ## Connect to JetRacer
 
