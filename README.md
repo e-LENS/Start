@@ -7,15 +7,14 @@
 * Python 3
 * CPU or NVIDIA GPU
 
-## Getting started
-### Installation
+## Installation
 ```
 git clone https://github.com/hazirbas/posenet-pytorch
 cd posenet-pytorch
 pip install -r requirements.txt
 ```
 
-### Dataset
+## Dataset
 * Outdoor dataset
 
   Download [King's College dataset](https://www.repository.cam.ac.uk/handle/1810/251342) under `datasets` folder
@@ -44,7 +43,7 @@ python util/compute_image_mean.py --dataroot datasets/[데이터셋이름] --hei
 * 6DoF 전처리
 
 
-### PoseNet train/test
+## PoseNet train/test
 
 각 데이터셋에 대해 PoseNet 학습 및 테스트
 
@@ -70,5 +69,21 @@ python test.py --model posenet  --dataroot ./datasets/[데이터셋이름] --nam
 * micro SD card (64GB~)
 * balenaEtcher
 
+## Installation
+
+1. Format the micro SD card
+2. Download [jetson-nano-2gb-sd-card-image](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image) and unzip it
+3. Use Etcher to write the Jetson Nano Image to the microSD card
+4. Download [JetRacer image](https://drive.google.com/file/d/1YtnjQ77w1B9REzy1JgLJbVSs2K3ocAEr/view?usp=sharing) and unzip it
+5. Use Etcher to write the Jetracer Image to the microSD card
+
+## Connect to JetRacer
+
+1. WIFI에 JetRacer 연결
+2. Jetson Nano의 piOLED에서 Wlan0 interface의 ip address 확인 or `ifconfig` command로 확인
+3. 이후 브라우저에서 `http://<ip address>:8888` 주소로 RetRacer에 무선 연결
+4. Password `jetbot` 을 입력해 Jupyter Lab 실행
+
+## Basic motions
 
 
