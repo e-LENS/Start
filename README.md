@@ -43,16 +43,20 @@ python util/compute_image_mean.py --dataroot datasets/[데이터셋이름] --hei
 * 6DoF 전처리
 
 
-## PoseNet train/test
+## PoseNet
 
-각 데이터셋에 대해 PoseNet 학습 및 테스트
+Train & Test the PoseNet model on each dataset
 
-* Train a model
+### Initialize the network
+To use pretrained googlenet trained on the Places dataset, download [places-googlenet.pickle](https://vision.in.tum.de/webarchive/hazirbas/poselstm-pytorch/places-googlenet.pickle) under `pretrained_models` folder
+
+
+### Train a model
 ```
 python train.py --model posenet --dataroot ./datasets/[데이터셋이름] --name posenet/KingsCollege/beta500 --beta 500 --gpu 0
 ```
 
-* Test a model
+### Test a model
 ```
 python test.py --model posenet  --dataroot ./datasets/[데이터셋이름] --name posenet/KingsCollege/beta500 --gpu 0
 ```
@@ -72,13 +76,16 @@ python test.py --model posenet  --dataroot ./datasets/[데이터셋이름] --nam
 ## Installation
 
 1. 사용할 micro SD card 포맷
-2. [jetson-nano-2gb-sd-card-image](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image) 다운로드 및 압축 해제
-3. Etcher 프로그램으로 microSD card에 Jetson Nano Image write
-4. Jetson nano의 SD card slot에 SD card를 넣은 후, HDMI 포트를 통해 모니터 연결 및 system configuration 설정
-5. [JetRacer image](https://drive.google.com/file/d/1YtnjQ77w1B9REzy1JgLJbVSs2K3ocAEr/view?usp=sharing) 다운로드 및 압축 해제
-6. Etcher 프로그램으로 microSD card에 Jetracer Image write
-7. Jetson nano의 SD card slot에 SD card를 넣은 후, HDMI 포트를 통해 모니터 연결 및 system configuration 설정
+2. Jetson Nano Image
+* [jetson-nano-2gb-sd-card-image](https://developer.nvidia.com/jetson-nano-2gb-sd-card-image) 다운로드 및 압축 해제
+* Etcher 프로그램으로 microSD card에 Jetson Nano Image write
+* Jetson nano의 SD card slot에 SD card를 넣은 후, HDMI 포트를 통해 모니터 연결 및 system configuration 설정
+3. JetRacer Image
+* [JetRacer image](https://drive.google.com/file/d/1YtnjQ77w1B9REzy1JgLJbVSs2K3ocAEr/view?usp=sharing) 다운로드 및 압축 해제
+* Etcher 프로그램으로 microSD card에 Jetracer Image write
+* Jetson nano의 SD card slot에 SD card를 넣은 후, HDMI 포트를 통해 모니터 연결 및 system configuration 설정
 
+(+)
 * GUI가 비활성화 되어있다면 `sudo systemctl set-default graphical.target` command 실행
 
 ## Connect to JetRacer
