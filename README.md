@@ -40,6 +40,16 @@ python util/compute_image_mean.py --dataroot datasets/[데이터셋이름] --hei
 
 * 6DoF 전처리
 
+> 7Scenes dataset은 Position & Orientation label을 4x4 matrix 로 제공하나 위 PoseNet은 position(X,Y,Z) & Orientation quaternion(W,P,Q,R) 의 7dimension vector label을 사용해 dataset preprocessing이 필요하다.
+
+해당 github의
+`
+posenet-pytorch/7scenes_preprocessing.py
+`
+파일을 이용해 
+
+4x4 => position(X,Y,Z) & Orientation quaternion(W,P,Q,R) 로 label을 변환한다. 
+
 
 ## PoseNet
 
