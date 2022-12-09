@@ -14,7 +14,7 @@ https://drive.google.com/drive/folders/19P1yU4HAmjYRiVjuhGXh2Weqgf1rpdbW
 
 ### 7Scenes dataset 6-DOF preprocessing
 
-1. 변환하고자 하는 7Scenes dataset의 디렉토리가 아래의 파일들을 포함하고 있는지 확인한다.
+__1. 7Scenes dataset directory structure를 확인한다.__
 ```
 posenet-pytorch/dataset/[dataset이름]
 ├── seq-01
@@ -32,7 +32,7 @@ posenet-pytorch/dataset/[dataset이름]
 └── dataset_test.txt   
 ```
 
-2. `7scenes_preprocessing.py` 의 `data_path`를 위 dataset 디렉토리 path로 설정한다.
+__2. `7scenes_preprocessing.py` 의 `data_path`를 위 dataset 디렉토리 path로 설정한다.__
 
 ex)
 ```python
@@ -40,7 +40,7 @@ data_path=".\posenet-pytorch\dataset\[dataset이름]"
 
 ```
 
-3.  `7scenes_preprocessing.py` 의 `train_seqnum`과 `test_seqnum` 을 `TrainSplit.txt`와 `TestSplit.txt` 파일 내용으로 변경한다. 
+__3.  `7scenes_preprocessing.py` 의 `train_seqnum`과 `test_seqnum` 을 `TrainSplit.txt`와 `TestSplit.txt` 파일 내용으로 변경한다. __
 
 ex)
 
@@ -55,7 +55,9 @@ test_seqnum=[3, 4]
 
 
 
-4. `7scenes_preprocessing.py`
+__4. Run `7scenes_preprocessing.py`__
+
+
 => 변형된 label값들은 `./dataset_train.txt` & `./dataset_test.txt` 에 저장된다.
 
 
