@@ -11,3 +11,51 @@ wget https://vision.in.tum.de/webarchive/hazirbas/poselstm-pytorch/places-google
 
 https://drive.google.com/drive/folders/19P1yU4HAmjYRiVjuhGXh2Weqgf1rpdbW
 
+
+### 7Scenes dataset 6-DOF preprocessing
+
+1. 변환하고자 하는 7Scenes dataset의 디렉토리가 아래의 파일들을 포함하고 있는지 확인한다.
+```
+posenet-pytorch/dataset/[dataset이름]
+├── seq-01
+│   ├── frame-000000.color.png
+│   ├── frame-000000.pose.txt
+│   ├── frame-000001.color.png
+│   ├── frame-000002.pose.txt
+│   ├──  ...
+│   
+├── seq-02
+  ...
+├── TrainSplit.txt
+├── TestSplit.txt
+├── dataset_train.txt
+└── dataset_test.txt   
+```
+
+2. `7scenes_preprocessing.py` 의 `data_path`를 위 dataset 디렉토리 path로 설정한다.
+
+ex)
+```python
+data_path=".\posenet-pytorch\dataset\[dataset이름]"
+
+```
+
+3.  `7scenes_preprocessing.py` 의 `train_seqnum`과 `test_seqnum` 을 `TrainSplit.txt`와 `TestSplit.txt` 파일 내용으로 변경한다. 
+
+ex)
+
+<img src="https://user-images.githubusercontent.com/108324590/206702952-db287461-2286-4d12-a1b4-66011418b3cf.jpg" width="15%" height="15%">
+<img src="https://user-images.githubusercontent.com/108324590/206703213-fbe7a77a-967b-4328-b407-cefd4df9d3d1.jpg" width="20%" height="20%">
+
+```python
+train_seqnum=[1, 2]
+test_seqnum=[3, 4]
+
+```
+
+
+
+4. `7scenes_preprocessing.py`
+=> 변형된 label값들은 `./dataset_train.txt` & `./dataset_test.txt` 에 저장된다.
+
+
